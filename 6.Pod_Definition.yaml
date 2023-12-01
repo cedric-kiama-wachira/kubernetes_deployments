@@ -9,3 +9,5 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
+
+#kubectl run  redis-stack --image redis/redis-stack --dry-run -o yaml

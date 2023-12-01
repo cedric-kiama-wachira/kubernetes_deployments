@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: golang
+  labels:
+    app: my-golang-app
+    type: back-end
+spec:
+  template:
+    metadata:
+      name: my-golang-app
+      labels:
+        app: my-golang-app
+        type: back-end
+    spec:
+        containers:
+        - name: my-golang
+          image: golang
+  replicas: 6
+  selector: 
+     matchLabels:
+      type: back-end
