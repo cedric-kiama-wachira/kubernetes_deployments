@@ -7,8 +7,8 @@ metadata:
     app: demo-voting-app
 spec:
   ports:
-    - port: 6679
-      targetPort: 6679
+    - port: 6789
+      targetPort: 6789
   selector:
     name: redis-pod
     app: demo-voting-app
