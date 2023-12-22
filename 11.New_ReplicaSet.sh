@@ -22,7 +22,7 @@ spec:
       - command:
         - sh
         - -c
-        - echo Hello Kubernetes! && sleep 7200
+        - echo Hello Kubernetes! && sleep 3600
         image: busybox
         imagePullPolicy: Always
         name: busybox-container
